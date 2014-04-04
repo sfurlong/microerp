@@ -1,0 +1,64 @@
+Microsoft (R) COFF Binary File Dumper Version 6.00.8168
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+
+Dump of file crinf.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  _JNI_OnLoad@8
+                  _JNI_OnUnload@8
+                  _Java_visi_mav_util_CRinf_canClose@8
+                  _Java_visi_mav_util_CRinf_close@8
+                  _Java_visi_mav_util_CRinf_closeReport@12
+                  _Java_visi_mav_util_CRinf_closeSubReport@12
+                  _Java_visi_mav_util_CRinf_discardSavedData@12
+                  _Java_visi_mav_util_CRinf_getCurrentValue@24
+                  _Java_visi_mav_util_CRinf_getCurrentValuesCount@20
+                  _Java_visi_mav_util_CRinf_getDefaultValue@24
+                  _Java_visi_mav_util_CRinf_getDefaultValuesCount@20
+                  _Java_visi_mav_util_CRinf_getErrorCode@12
+                  _Java_visi_mav_util_CRinf_getErrorText@12
+                  _Java_visi_mav_util_CRinf_getFormulaCount@12
+                  _Java_visi_mav_util_CRinf_getFormula__SLjava_lang_String_2@16
+                  _Java_visi_mav_util_CRinf_getFormula__SS@16
+                  _Java_visi_mav_util_CRinf_getNthParameterField@16
+                  _Java_visi_mav_util_CRinf_getPageCount@12
+                  _Java_visi_mav_util_CRinf_getParameterFieldCount@12
+                  _Java_visi_mav_util_CRinf_getParameterType@16
+                  _Java_visi_mav_util_CRinf_getSPParam@16
+                  _Java_visi_mav_util_CRinf_getSPParamCount@12
+                  _Java_visi_mav_util_CRinf_getSQLQuery@12
+                  _Java_visi_mav_util_CRinf_getSelectedPrinter@12
+                  _Java_visi_mav_util_CRinf_getSelectionFormula@12
+                  _Java_visi_mav_util_CRinf_hasSavedData@12
+                  _Java_visi_mav_util_CRinf_isPrintJobFinished@12
+                  _Java_visi_mav_util_CRinf_logOffServer@8
+                  _Java_visi_mav_util_CRinf_open@8
+                  _Java_visi_mav_util_CRinf_openReport@12
+                  _Java_visi_mav_util_CRinf_openSubReport@16
+                  _Java_visi_mav_util_CRinf_outputToFile@20
+                  _Java_visi_mav_util_CRinf_outputToPrinter@16
+                  _Java_visi_mav_util_CRinf_outputToWindow@32
+                  _Java_visi_mav_util_CRinf_selectPrinter@24
+                  _Java_visi_mav_util_CRinf_setFormula@20
+                  _Java_visi_mav_util_CRinf_setNthParameterField@20
+                  _Java_visi_mav_util_CRinf_setNthTableLogOnInfo@28
+                  _Java_visi_mav_util_CRinf_setPrintOptions@16
+                  _Java_visi_mav_util_CRinf_setSPParam@20
+                  _Java_visi_mav_util_CRinf_setSQLQuery@16
+                  _Java_visi_mav_util_CRinf_setSelectionFormula@16
+                  _Java_visi_mav_util_CRinf_testReport@8
+
+  Summary
+
+          14 .idata$2
+          14 .idata$3
+          B0 .idata$4
+          B0 .idata$5
+         7AA .idata$6
+         102 .text

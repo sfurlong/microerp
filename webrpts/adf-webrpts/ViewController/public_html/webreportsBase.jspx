@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:messages id="m1"/>
+      <af:form id="f1">
+        <af:panelSplitter orientation="vertical" splitterPosition="50" id="ps2">
+          <f:facet name="first"/>
+          <f:facet name="second">
+            <af:panelSplitter orientation="vertical" positionedFromEnd="true"
+                              splitterPosition="50" id="ps1">
+              <f:facet name="first">
+                <af:panelTabbed id="tabbedPannel">
+                  <af:showDetailItem text="Financials"
+                                     id="financials_sdi"
+                                     disclosureListener="#{TabsBackingBean.financials_sdi_disclosureListener}">
+                    <af:table value="#{bindings.ViewObj1.collectionModel}"
+                              var="row" rows="#{bindings.ViewObj1.rangeSize}"
+                              emptyText="#{bindings.ViewObj1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                              fetchSize="#{bindings.ViewObj1.rangeSize}"
+                              rowBandingInterval="0" id="t1" width="563">
+                      <af:column sortProperty="Id" sortable="false"
+                                 headerText="#{bindings.ViewObj1.hints.Id.label}"
+                                 id="c2">
+                        <af:outputText value="#{row.Id}" id="ot2"/>
+                      </af:column>
+                      <af:column sortProperty="RptName" sortable="false"
+                                 headerText="#{bindings.ViewObj1.hints.RptName.label}"
+                                 id="c4">
+                        <af:outputText value="#{row.RptName}" id="ot4"/>
+                      </af:column>
+                      <af:column sortProperty="RptUrl" sortable="false"
+                                 headerText="#{bindings.ViewObj1.hints.RptUrl.label}"
+                                 id="c3">
+                        <af:outputText value="#{row.RptUrl}" id="ot3"/>
+                      </af:column>
+                      <af:column sortProperty="HasReadAccess" sortable="false"
+                                 headerText="#{bindings.ViewObj1.hints.HasReadAccess.label}"
+                                 id="c1">
+                        <af:outputText value="#{row.HasReadAccess}" id="ot1"/>
+                      </af:column>
+                    </af:table>
+                  </af:showDetailItem>
+                  <af:showDetailItem text="Accounts Receivable"
+                                     id="accts_receivable_sdi"/>
+                  <af:showDetailItem text="Accounts Payable"
+                                     id="accts_payable_sdi"/>
+                  <af:showDetailItem text="Inventory"
+                                     id="inventory_sdi"/>
+                  <af:showDetailItem text="Dynamic Reports"
+                                     id="dynamic_rpts_sdi"/>
+                  <af:showDetailItem text="Administration" id="admin_sdi"/>
+                </af:panelTabbed>
+                <!-- id="af_one_column_header_and_footer_stretched_with_splitter"   -->
+              </f:facet>
+              <f:facet name="second"/>
+            </af:panelSplitter>
+          </f:facet>
+        </af:panelSplitter>
+      </af:form>
+    </af:document>
+  </f:view>
+  <!--oracle-jdev-comment:preferred-managed-bean-name:TabsBackingBean-->
+</jsp:root>

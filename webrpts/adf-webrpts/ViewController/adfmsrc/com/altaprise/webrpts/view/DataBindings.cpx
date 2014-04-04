@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.55.36" id="DataBindings" SeparateXMLFiles="false"
+             Package="com.altaprise.webrpts.view" ClientType="Generic">
+  <pageMap>
+    <page path="/webreportsBase.jspx"
+          usageId="com_altaprise_webrpts_view_webreportsBasePageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_altaprise_webrpts_view_webreportsBasePageDef"
+          path="com.altaprise.webrpts.view.pageDefs.webreportsBasePageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl"
+                     Package="com.altaprise.webrpts.model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

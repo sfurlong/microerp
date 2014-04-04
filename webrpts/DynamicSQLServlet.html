@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamic Report Generator</title>
+</head>
+
+<body leftmargin=15% topmargin=10% bottommargin=5% onload="window.focus()">
+<center>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 bgcolor=#ff9900 width=100%>
+<tr bgcolor=#ff9900><FORM action=dynamicsqlservlet method="post">
+	<td>Enter the SQL Report Definition:</td>
+</tr>
+
+<tr><td><br></td></tr>
+<tr>
+	<td align=center><TEXTAREA cols=50 name=sqlStmt rows=10></TEXTAREA></td>
+</tr>
+  <tr><td><br><br></td></tr>
+
+  <tr>
+	<td colspan=2 align=center><input type=checkbox name=excel value="true">
+		<font size=2>View in MS-Excel format</font></td>
+  </tr>
+  <tr>
+	<td colspan=2 align=center><font size=1><a href="help.html#excel">
+		What's this?</a></font></td>
+  </tr>
+<tr><td><br><br></td></tr>
+<tr>
+	<td>press Submit to execute the SQL</td>
+</tr>
+
+<tr><td><br></td></tr>
+<tr>
+	<td align=center><input type=submit value="Submit"><input type=reset value="Reset"></td>
+</tr>
+</TABLE></form></center>
+
+<map name="map">
+<area shape="RECT" alt="Financials" coords="1,0,85,25" href="financials.html" title="Financials">
+<area shape="RECT" alt="Accounts Receivable" coords="92,0,230,25" href="acc_rec.html" title="Accounts Receivable">
+<area shape="RECT" alt="Accounts Payable" coords="238,0,361,25" href="acc_pay.html" title="Accounts Payable">
+<area shape="RECT" alt="Inventory" coords="369,0,458,25" href="inventory.html" title="Inventory">
+<area shape="RECT" alt="Dynamic Reports" coords="464,0,614,25" href="dyn_rpts.html" title="Dynamic Reports">
+</map>
+
+</body>
+</html>

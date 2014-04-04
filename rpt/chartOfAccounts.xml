@@ -1,0 +1,59 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>ACCOUNT</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Account No.</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>description</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Account Name</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>account_type</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Account Type</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>is_subaccount</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Is Subaccount</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>subaccount</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Subaccount Of</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>note</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Note</Col_Heading>
+   </Column>
+   <SQL_Where_Clause>order by id, description</SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Chart Of Accounts&lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>0</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>1</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags>align=center</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags>align=center</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>5</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+   </Detail>
+</Root_Element>

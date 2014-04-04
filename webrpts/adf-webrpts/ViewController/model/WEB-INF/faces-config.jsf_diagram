@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <Page
+      id="Page2">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">230.59766</property>
+      <property
+         name="x">143.0</property>
+      <property
+         name="jspName">/login.jsp</property>
+   </Page>
+   <Page
+      id="Page3">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">126.896484</property>
+      <property
+         name="x">379.0</property>
+      <property
+         name="jspName">/webreportsBase.jspx</property>
+   </Page>
+   <Page
+      id="Page4">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">273.89648</property>
+      <property
+         name="x">352.0</property>
+      <property
+         name="jspName">/loginError.jspx</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase5"
+      from="Page2"
+      to="Page3">
+      <property
+         name="fromOutcome">loginSuccess</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">R46,184.0,226.74707,338.0,126.5459,L50</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase6"
+      from="Page2"
+      to="Page4">
+      <property
+         name="fromOutcome">loginFail</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">R54,184.0,233.74707,311.0,273.5459,L50</property>
+   </NavigationCase>
+</SDM>

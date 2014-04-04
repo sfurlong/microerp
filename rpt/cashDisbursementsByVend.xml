@@ -1,0 +1,87 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>payment_voucher</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>vendor_name</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Vendor Name</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>vendor_id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Vendor Id</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>check_num</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Check Num</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Voucher Id</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>date_paid</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Date Paid</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>acctid</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Acct. Id</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>acctname</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Acct. Name</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>invoice_num</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice Num</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>total_payments_posted</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Payment Amt</Col_Heading>
+   </Column>
+   <SQL_Where_Clause>where (date_paid between '?:1' and '?:2') and (is_voided is null or is_voided = 'N')  and vendor_id like '?:3%' order by vendor_name, check_num </SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Cash Disbursements&lt;br&gt; From ?:1 to ?:2 &lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <GroupHeader>
+      <GroupByColNum>0</GroupByColNum>
+      <ColNum>0</ColNum>
+      <ColNum>1</ColNum>
+   </GroupHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>5</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>6</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>7</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>8</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+   </Detail>
+   <GroupFooter>
+      <SumColPos>8</SumColPos>
+   </GroupFooter>
+   <ReportFooter>
+      <Footer_Note1/>
+      <SumColPos>8</SumColPos>
+   </ReportFooter>
+</Root_Element>

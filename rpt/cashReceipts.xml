@@ -1,0 +1,74 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>cash_receipt</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>date_received</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Received</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>shipment_id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice No</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Receipt Id</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>cust_name</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Company</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>payment_amt</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Amount Rec'd</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>payment_method</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Pay Method</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>deposit_acct_name</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Deposit Acct</Col_Heading>
+   </Column>
+   <SQL_Where_Clause> where (date_received between '?:1' and '?:2') and deposit_acct_id = '?:3' and payment_method ='CHECK' order by date_received, shipment_id</SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Cash Receipts&lt;br&gt; From ?:1 To ?:2  &lt;br&gt; For ?:3 &lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <GroupHeader>
+      <GroupByColNum>0</GroupByColNum>
+      <ColNum>0</ColNum>
+   </GroupHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>1</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>5</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>6</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+   </Detail>
+   <GroupFooter>
+      <SumColPos>4</SumColPos>
+   </GroupFooter>
+   <ReportFooter>
+      <SumColPos>4</SumColPos>
+      <Footer_Note1/>
+   </ReportFooter>
+</Root_Element>

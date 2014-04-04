@@ -1,0 +1,74 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>SHIPMENT</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>date_created</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Date</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice Num</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>customer_name</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Customer</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>subtotal</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Total Product</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>total_shipping</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Shipping Cost</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>total_tax</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Tax</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>total_value</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Total Sales</Col_Heading>
+   </Column>
+   <SQL_Where_Clause>where (is_canceled is null or is_canceled = 'N') and (date_created between '?:1' and '?:2')  order by date_created, id</SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Sales Journal&lt;br&gt; From ?:1 To ?:2 &lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>0</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>1</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>5</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>6</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+   </Detail>
+   <ReportFooter>
+      <Footer_Note1/>
+      <SumColPos>3</SumColPos>
+      <SumColPos>4</SumColPos>
+      <SumColPos>5</SumColPos>
+      <SumColPos>6</SumColPos>
+   </ReportFooter>
+</Root_Element>

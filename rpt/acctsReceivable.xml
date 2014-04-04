@@ -1,0 +1,72 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>SHIPMENT</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice No.</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>date_created</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice Date</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>order_num</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Our Order No.</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>customer_name</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Company</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>total_value</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice Total</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>total_cash_received</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Amt Paid</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>total_value - total_cash_received</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Amt Due</Col_Heading>
+      <Display_Format>CURRENCY</Display_Format>
+   </Column>
+   <SQL_Where_Clause>where (((total_value - total_cash_received) &gt; 0) or ((total_value - total_cash_received) &lt; 0) or (total_cash_received is null)) and (date_created between '?:1' and '?:2') and (is_canceled is null or is_canceled = 'N')  order by date_created, id desc</SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Accounts Receivable Report&lt;br&gt; From ?:1 To ?:2 &lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>0</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>1</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>5</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>6</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+   </Detail>
+   <ReportFooter>
+      <Footer_Note1/>
+      <SumColPos>6</SumColPos>
+   </ReportFooter>
+</Root_Element>

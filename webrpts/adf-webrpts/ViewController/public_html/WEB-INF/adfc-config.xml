@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <managed-bean id="__1">
+    <managed-bean-name id="__4">loginBackingBean</managed-bean-name>
+    <managed-bean-class id="__3">com.altaprise.webrpts.view.loginBackingBean</managed-bean-class>
+    <managed-bean-scope id="__2">request</managed-bean-scope>
+  </managed-bean>
+  <managed-bean id="__7">
+    <managed-bean-name id="__5">TabsBackingBean</managed-bean-name>
+    <managed-bean-class id="__8">com.altaprise.webrpts.view.TabsBackingBean</managed-bean-class>
+    <managed-bean-scope id="__6">request</managed-bean-scope>
+  </managed-bean>
+</adfc-config>

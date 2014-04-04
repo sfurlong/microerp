@@ -1,0 +1,21 @@
+# Microsoft Developer Studio Generated Dependency File, included by daiRptViewer.mak
+
+.\daiRptViewer.cpp : \
+	".\crpe.h"\
+	".\daiRptViewer.h"\
+	".\peplus.h"\
+	
+
+.\daiRptViewer.rc : \
+	".\res\daiRptViewer.rc2"\
+	
+
+.\peplus.cpp : \
+	".\crpe.h"\
+	".\peplus.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"e:\microsoft visual studio\vc98\include\basetsd.h"\
+	

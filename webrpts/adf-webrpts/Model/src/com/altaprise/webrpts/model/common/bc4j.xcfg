@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.altaprise.webrpts.model.AppModule" default="AppModuleShared">
+      <AppModuleConfig name="AppModuleLocal" ApplicationName="com.altaprise.webrpts.model.AppModule" DeployPlatform="LOCAL" JDBCName="xe" jbo.project="com.altaprise.webrpts.model.Model" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory">
+         <Database jbo.sql92.JdbcDriverClass="org.hsqldb.jdbcDriver" jbo.TypeMapEntries="Java" jbo.SQLBuilder="SQL92"/>
+         <Security AppModuleJndiName="com.altaprise.webrpts.model.AppModule"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="AppModuleShared" ApplicationName="com.altaprise.webrpts.model.AppModule" DeployPlatform="LOCAL" JDBCName="xe" jbo.project="com.altaprise.webrpts.model.Model" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory">
+         <AM-Pooling jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1"/>
+         <Database jbo.sql92.JdbcDriverClass="org.hsqldb.jdbcDriver" jbo.TypeMapEntries="Java" jbo.SQLBuilder="SQL92"/>
+         <Security AppModuleJndiName="com.altaprise.webrpts.model.AppModule"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

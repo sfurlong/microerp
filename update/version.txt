@@ -1,0 +1,5 @@
+productName=microERP
+versionNumber=2.0.1
+buildDate=20060227_0947
+patchNumber=201.03
+languages=en

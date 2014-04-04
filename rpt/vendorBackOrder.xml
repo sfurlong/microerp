@@ -1,0 +1,91 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>purch_order</Table_SQL_Name>
+   </Table>
+   <Table>
+      <Table_SQL_Name>purch_order_item</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>purch_order.id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Purchase Order</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>qty_ordered</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Tot Qty Ord</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>qty_for_cust</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Qty Cust</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>qty_for_stock</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Qty Stock</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>qty_received</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Qty Rcvd</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>purch_order.cust_name</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Customer</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>item_id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Model</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>unit_price</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Unit Price</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>(qty_ordered - qty_received) * unit_price</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Total</Col_Heading>
+      <Display_Format>CURRENCY</Display_Format>
+   </Column>
+   <SQL_Where_Clause>where purch_order.id = purch_order_item.id and purch_order.locality = purch_order_item.locality and (qty_ordered &gt; qty_received or qty_received is null) order by purch_order.id, item_id </SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Vendor Back Order Report&lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>0</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>1</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>5</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>6</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>7</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>8</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+   </Detail>
+   <ReportFooter>
+      <Footer_Note1/>
+      <SumColPos>8</SumColPos>
+   </ReportFooter>
+</Root_Element>

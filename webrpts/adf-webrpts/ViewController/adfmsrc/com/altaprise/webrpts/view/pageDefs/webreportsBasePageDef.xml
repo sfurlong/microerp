@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.55.36" id="webreportsBasePageDef"
+                Package="com.altaprise.webrpts.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="ViewObj1" RangeSize="25" DataControl="AppModuleDataControl"
+              id="ViewObj1Iterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="ViewObj1Iterator" id="ViewObj1">
+      <nodeDefinition DefName="com.altaprise.webrpts.model.ViewObj"
+                      Name="ViewObj10">
+        <AttrNames>
+          <Item Value="Id"/>
+          <Item Value="RptName"/>
+          <Item Value="RptUrl"/>
+          <Item Value="HasReadAccess"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

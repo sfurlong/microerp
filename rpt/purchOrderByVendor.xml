@@ -1,0 +1,47 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>purch_order</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>vendor_id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Vendor #</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>vendor_name</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Vendor</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>count(vendor_id)</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;# of Purchase Orders</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>sum(total_value)</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Total Purchase</Col_Heading>
+   </Column>
+   <SQL_Where_Clause> where (date_created between '?:1' and '?:2') and vendor_name = '?:3' group by vendor_id, vendor_name</SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Purchase Order By Vendor&lt;br&gt; From ?:1 To ?:2 &lt;br&gt; For ?:3 &lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>0</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>1</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+   </Detail>
+   <ReportFooter>
+      <SumColPos>3</SumColPos>
+      <Footer_Note1/>
+   </ReportFooter>
+</Root_Element>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>Chart of Accounts</title>
+
+<script language="JavaScript" src="dateScript.js"> </script>
+
+</head>
+
+<body leftmargin=15% topmargin=10% bottommargin=10%>
+<center>
+
+<!--comment added to test Tristan's CVS -->
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0  bgcolor="#cc99ff" width=100%>
+  <tr>
+	<td colspan=2 align=center><H1>Chart of Accounts</H1></td>
+  </tr>
+
+  <tr>
+	<td colspan=2 align=center><H2>Report Parameters</H2></td>
+  </tr>
+  <tr><td><br><br></td></tr>
+
+  <tr><FORM  name=dateForm action=xmlrptservlet method=POST>
+  <tr>
+	<td colspan=2 align=center><input type=checkbox name=excel value="true">
+		<font size=2>View in MS-Excel format</font></td>
+  </tr>
+  <tr>
+	<td colspan=2 align=center><font size=1><a href="help.html#excel">
+		What's this?</a></font></td>
+  </tr>
+  <tr><td><br><br></td></tr>
+
+  <tr>
+	<td colspan=2 align=center><input type=hidden  value="chartOfAccounts.xml" name=rptName  size=15>
+			<input type=submit value=Submit> &nbsp;</td>
+  </tr>
+  <tr><td>&nbsp;<br><br><br><br></td><td>&nbsp</td></tr>
+
+</form>
+</TABLE>
+
+</center>
+</body>
+</html>

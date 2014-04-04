@@ -1,0 +1,84 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>account</Table_SQL_Name>
+   </Table>
+   <Table>
+      <Table_SQL_Name>account_detail</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>account.id</Col_SQL_Name>
+      <Col_Heading>&lt;center&gt;&lt;U&gt;Acct Num</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>description</Col_SQL_Name>
+      <Col_Heading>&lt;center&gt;&lt;U&gt;Acct Description</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>trans_type</Col_SQL_Name>
+      <Col_Heading>&lt;center&gt;&lt;U&gt;Trans Type</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>trans_date</Col_SQL_Name>
+      <Col_Heading>&lt;center&gt;&lt;U&gt;Date</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>trans_ref</Col_SQL_Name>
+      <Col_Heading>&lt;center&gt;&lt;U&gt;Trans. Ref.</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>note1</Col_SQL_Name>
+      <Col_Heading>&lt;center&gt;&lt;U&gt;Note</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>debit</Col_SQL_Name>
+      <Col_Heading>&lt;center&gt;&lt;U&gt;Debit</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>credit</Col_SQL_Name>
+      <Col_Heading>&lt;center&gt;&lt;U&gt;Credit</Col_Heading>
+   </Column>
+   <SQL_Where_Clause>where account.id = account_detail.id and account.locality=account_detail.locality and (trans_date between '?:1' and '?:2') and account.id like '?:3%' order by account.id, account_detail.trans_date, account_detail.trans_ref</SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;General Ledger&lt;br&gt; From: ?:1 To: ?:2 &lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <GroupHeader>
+      <GroupByColNum>0</GroupByColNum>
+      <ColNum>0</ColNum>
+      <ColNum>1</ColNum>
+   </GroupHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>5</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>6</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>7</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+   </Detail>
+   <GroupFooter>
+      <SumColPos>6</SumColPos>
+      <SumColPos>7</SumColPos>
+   </GroupFooter>
+   <ReportFooter>
+      <Footer_Note1/>
+      <SumColPos>6</SumColPos>
+      <SumColPos>7</SumColPos>
+   </ReportFooter>
+</Root_Element>

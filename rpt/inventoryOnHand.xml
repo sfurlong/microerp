@@ -1,0 +1,60 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>item</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Product Id</Col_Heading>
+      <Display_Format/>
+   </Column>
+   <Column>
+      <Col_SQL_Name>standard_desc</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Product Description</Col_Heading>
+      <Display_Format/>
+   </Column>
+   <Column>
+      <Col_SQL_Name>purchase_price</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Purchase Price</Col_Heading>
+      <Display_Format>CURRENCY</Display_Format>
+   </Column>
+   <Column>
+      <Col_SQL_Name>onhand_qty</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Qty On Hand</Col_Heading>
+      <Display_Format/>
+   </Column>
+   <Column>
+      <Col_SQL_Name>purchase_price * onhand_qty</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Extended Price</Col_Heading>
+      <Display_Format>CURRENCY</Display_Format>
+   </Column>
+   <SQL_Where_Clause>where onhand_qty is not null and (onhand_qty &gt; 0 or onhand_qty &lt; 0) order by id</SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Inventory On Hand&lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>0</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>1</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+   </Detail>
+   <ReportFooter>
+      <Footer_Note1/>
+      <SumColPos>4</SumColPos>
+   </ReportFooter>
+</Root_Element>

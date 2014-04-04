@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+<!-- ======================================================================= -->
+<!-- Ant own build file                                                      -->
+<!-- ======================================================================= -->
+
+<project name="dai" default="all" basedir=".">
+
+	<property name="build.version.file" value="version.txt" />
+	<property name="build.version.temp" value="microerp.version.template" />
+	<property name="version.number" value="2.0.1" />
+	<property name="patch.number" value="201.04" />
+	<property name="jetty.home" value="${build.root.dir}/jetty" />
+
+	<target name="all" depends="visi, daiBeans, dai, rmi, version, jar, war">
+	</target>
+
+	<target name="javasrc" depends="visi, daiBeans, dai, rmi">
+	</target>
+
+	<target name="clean">
+		<delete includeEmptyDirs="true" dir="${build.root.dir}/classes" />
+		<delete file="${build.root.dir}/lib/dia.jar" />
+		<delete file="${build.root.dir}/lib/daiBeans.jar" />
+	</target>
+
+	<target name="visi">
+		<mkdir dir="${build.root.dir}/classes" />
+		<javac srcdir="${build.root.dir}/source" destdir="${build.root.dir}/classes" classpath="${classpath}" includes="visi/**/*.java" deprecation="on" failonerror="true" debug="${debug}" />
+	</target>
+
+	<target name="daiBeans">
+		<mkdir dir="${build.root.dir}/classes" />
+		<javac srcdir="${build.root.dir}/source" destdir="${build.root.dir}/classes" classpath="${classpath}" includes="daiBeans/**/*.java" deprecation="on" failonerror="true" debug="${debug}" />
+	</target>
+
+
+	<target name="dai">
+		<mkdir dir="${build.root.dir}/classes" />
+		<javac srcdir="${build.root.dir}/source" destdir="${build.root.dir}/classes" classpath="${classpath}" includes="dai/**/*.java, com/**/*.java" deprecation="on" failonerror="true" debug="${debug}" />
+		<mkdir dir="${build.root.dir}/classes/com/altaprise/plaf/icons" />
+		<copy todir="${build.root.dir}/classes/com/altaprise/plaf/icons">
+			<fileset dir="${build.root.dir}/images/icons">
+				<include name="*.*" />
+			</fileset>
+		</copy>
+
+	</target>
+
+	<target name="tools">
+		<mkdir dir="${build.root.dir}/classes" />
+		<javac srcdir="${build.root.dir}/tools/dataPipe/src" destdir="${build.root.dir}/classes" classpath="${classpath}" includes="**/*.java" deprecation="on" failonerror="true" debug="${debug}" />
+	</target>
+
+	<target name="jar">
+		<jar jarfile="${build.root.dir}/lib/dai.jar" basedir="${build.root.dir}/classes" includes="dai/**, com/**, visi/**" />
+		<jar jarfile="${build.root.dir}/lib/daiBeans.jar" basedir="${build.root.dir}/classes" includes="daiBeans/**" />
+		<jar jarfile="${build.root.dir}/lib/clientupdate.jar" basedir="${build.root.dir}/classes" includes="com/**" />
+		<jar jarfile="${build.root.dir}/lib/daitools.jar" basedir="${build.root.dir}/classes" includes="com/altaprise/tools/**" />
+	</target>
+
+	<target name="rmi">
+		<rmic classname="dai.server.dbService.DBRMIServiceImpl" base="${build.root.dir}/classes" />
+		<rmic classname="dai.server.inventoryService.InventoryRMIServiceImpl" base="${build.root.dir}/classes" />
+		<rmic classname="dai.server.loggerService.LoggerRMIServiceImpl" base="${build.root.dir}/classes" />
+		<rmic classname="dai.server.purchOrderService.PurchOrderRMIServiceImpl" base="${build.root.dir}/classes" />
+		<rmic classname="dai.server.sessionService.SessionRMIServiceImpl" base="${build.root.dir}/classes" />
+		<rmic classname="dai.server.shipmentService.ShipmentRMIServiceImpl" base="${build.root.dir}/classes" />
+	</target>
+
+	<target name="war">
+		<delete file="${build.root.dir}/altaprise.war" />
+		<war destfile="altaprise.war" webxml="${build.root.dir}/source/webrpts.xml">
+			<lib dir="${build.root.dir}/lib">
+				<exclude name="*.dll" />
+				<exclude name="dai.jar" />
+				<exclude name="daiBeans.jar" />
+				<exclude name="servlet.jar" />
+			</lib>
+			<fileset dir="${build.root.dir}/webrpts" />
+			<classes dir="${build.root.dir}/classes" />
+		</war>
+	</target>
+
+
+	<target name="dist">
+		<delete includeEmptyDirs="true" dir="${build.root.dir}/dist" />
+		<mkdir dir="${build.root.dir}/dist" />
+		<copy todir="${build.root.dir}/dist/lib">
+			<fileset dir="${build.root.dir}/lib">
+				<include name="*.*" />
+			</fileset>
+		</copy>
+		<copy todir="${build.root.dir}/dist/images">
+			<fileset dir="${build.root.dir}/images">
+				<include name="*.*" />
+			</fileset>
+		</copy>
+		<copy todir="${build.root.dir}/dist/rpt">
+			<fileset dir="${build.root.dir}/rpt">
+				<include name="*.*" />
+			</fileset>
+		</copy>
+		<copy todir="${build.root.dir}/dist/doc">
+			<fileset dir="${build.root.dir}/doc">
+				<include name="admin-guide.pdf" />
+				<include name="admin-guide.doc" />
+			</fileset>
+		</copy>
+		<!-- Creat the HSQL DB portion of the distribution -->
+		<copy todir="${build.root.dir}/dist/demo">
+			<fileset dir="${build.root.dir}/demo">
+				<include name="*.*" />
+			</fileset>
+		</copy>
+		<!-- Creat the Jetty portion of the distribution -->
+		<copy todir="${build.root.dir}/dist/jetty/">
+			<fileset dir="${jetty.home}/">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+		<delete includeEmptyDirs="true" dir="${build.root.dir}/dist/jetty/webapps" />
+		<mkdir dir="${build.root.dir}/dist/jetty/webapps" />
+		<copy todir="${build.root.dir}/dist/jetty/webapps">
+			<fileset dir="${build.root.dir}">
+				<include name="altaprise.war" />
+			</fileset>
+		</copy>
+		<!-- Create the JDK portion of the distribution -->
+		<mkdir dir="${build.root.dir}/dist/jdk" />
+		<copy todir="${build.root.dir}/dist/jdk">
+			<fileset dir="${jdk.home}">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+		<!-- Copy the start scripts -->
+		<copy todir="${build.root.dir}/dist">
+			<fileset dir="${build.root.dir}">
+				<include name="altaprise.conf" />
+				<include name="startclient.bat" />
+				<include name="startserver.bat" />
+				<include name="stopserver.bat" />
+				<include name="setrunenv.bat" />
+				<include name="version.txt" />
+				<include name="startclientupdate.bat" />
+			</fileset>
+			<fileset dir="${build.root.dir}/scripts">
+				<include name="license.txt" />
+				<include name="readme.html" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="dist-tarball">
+		<delete file="${build.root.dir}/dist/altaprise-${patch.number}.tar" />
+		<tar tarfile="${build.root.dir}/dist/microerp${patch.number}.tar"
+		     basedir="${build.root.dir}/dist/"
+		     excludes="jdk/**, microerp*.tar"/>		
+	</target>
+	
+	<target name="create-update">
+		<antcall target="version"/>
+		<delete includeEmptyDirs="true" dir="${build.root.dir}/update" />
+		<mkdir dir="${build.root.dir}/update" />
+		<mkdir dir="${build.root.dir}/update/images" />
+		<mkdir dir="${build.root.dir}/update/lib" />
+		<mkdir dir="${build.root.dir}/update/rpt" />
+		<mkdir dir="${build.root.dir}/update/doc" />
+		<copy todir="${build.root.dir}/update/lib">
+			<fileset dir="${build.root.dir}/lib">
+				<include name="dai.jar" />
+				<include name="daiBeans.jar" />
+				<include name="clientupdate.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${build.root.dir}/update">
+			<fileset dir="${build.root.dir}">
+				<include name="version.txt" />
+			</fileset>
+		</copy>
+		<touch file="${build.root.dir}/update/microERP_patchId-${patch.number}"/>		
+		<zip destfile="${build.root.dir}/update/microERP_patch-${patch.number}.zip"
+			basedir="${build.root.dir}/update"
+		/>
+	</target>
+
+	<target name="javadoc">
+		<javadoc private="false" packagenames="" destdir="${build.root.dir}/javadocs" sourcepath="" />
+	</target>
+
+	<target name="version">
+		<tstamp>
+			<format property="build.number" pattern="yyyyMMdd_HHmm" />
+		</tstamp>
+
+		<filter token="VERSIONNUMBER" value="${version.number}" />
+		<filter token="BUILDNUMBER" value="${build.number}" />
+		<filter token="PATCHNUMBER" value="${patch.number}" />
+
+		<copy file="${build.root.dir}/scripts/${build.version.temp}" tofile="${build.root.dir}/${build.version.file}" filtering="true" overwrite="yes" />
+
+		<echo message="Release Number: ${version.number}" />
+		<echo message="Build Number: ${build.number}" />
+		<echo message="Patch Number: ${patch.number}" />
+	</target>
+
+	<target name="crjni" depends="visi">
+		<javac srcdir="${build.root.dir}/tools/crjni/src" destdir="${build.root.dir}/classes" classpath="${classpath}" includes="dai/**/*.java, com/**/*.java" deprecation="on" failonerror="true" debug="${debug}" />
+	</target>
+
+</project>
+

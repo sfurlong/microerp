@@ -1,0 +1,24 @@
+1.  Install the Firbird Database.
+Get the firebird database from: http://firbird.sourceforge.net
+
+2.  The Interbase system userid (SYSDBA) password must be changed before the 
+application will run.  To change the password do the following:
+<firebird instal location>\Program Files\Firebird\bin>gsec -user SYSDBA -password masterkey
+GSEC> modify SYSDBA -pw daimgr
+GSEC> quit
+
+3.  Install the microERP2.0-Setup.exe
+
+4.  Download the demo database
+
+4.  Modify the following altaprise.conf parameters:
+serverDBUrl=jdbc:firebirdsql:localhost/3050:<your install dir>:/microerp/demodb.gdb
+
+5.  Modify the following startmicroerp.bat parameters:
+set JAVA_HOME=<your java home>
+
+To Install the webreports Module:
+1.  Install JBoss app server
+
+2.  Deploy the altaprise.war file.
+

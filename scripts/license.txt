@@ -1,0 +1,275 @@
+Altaprise, Inc.  microERP software
+
+Altaprise, Inc NO-NONSENSE LICENSE STATEMENT
+AND LIMITED WARRANTY
+
+IMPORTANT - READ CAREFULLY
+The Altaprise, Inc software product ("Software") identified above, including any software,
+media, and accompanying on-line or printed documentation, is licensed, not sold, by
+Altaprise, Inc Corporation ("Altaprise, Inc") to the individual or organization named in your invoice
+("you").  This license statement and limited warranty constitutes a legal agreement
+("License Agreement") between you and Altaprise, Inc for the Software.  BY INSTALLING,
+COPYING, OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE
+BOUND BY ALL OF THE TERMS AND CONDITIONS OF THE LICENSE
+AGREEMENT.  If you are the original purchaser and you do not agree with the terms
+and conditions of the License Agreement, promptly return the unused Software to the
+place from which you obtained it for a full refund.
+
+Upon your acceptance of the terms and conditions of the License Agreement, Altaprise, Inc
+grants you the right to use the Software for your own internal data processing purposes in
+the manner provided herein and subject to the following license type and number
+restrictions:
+
+(a) 	Your invoice will show the number of licenses, by license type, for the Software
+you have acquired from Altaprise, Inc.  The total number of Software copies used by
+you may not exceed the number of licenses acquired by you for the specified
+license type.  Your use of the Software is restricted by license type as follows:
+
+(i) 	NAMED USER (development use only) - a specific named person is
+permitted to use the Software for development purposes only; to deploy a
+particular application program created with the Software, you must first
+obtain from Altaprise, Inc one of the following deployment licenses for each
+deployment of the particular application program,
+(ii) 	CONCURRENT USER (non-development, deployment use only) - each copy
+of the Software is permitted to be accessed at any one time by no more than
+the number of users licensed for that particular copy of the Software running
+on a particular machine,
+(iii) 	MACHINE (non-development, deployment use only) - a specific hardware
+system as designated on your invoice is permitted to run the Software, and
+(iv) 	MACHINE, BY NUMBER OF PROCESSORS (non-development,
+deployment use only) - a specific hardware system having a specific number
+of processors as designated on your invoice is permitted to run the Software.
+
+(b) 	You may acquire additional licenses from Altaprise, Inc.  Only licensed users for whom
+the licenses have been acquired may use the Software.
+
+(c) 	Only licensed users may make copies of the Software for their backup purposes.
+
+(d) 	Only licensed users may access the Software over a network.
+
+(e) 	If this license was acquired for evaluation or demonstration purposes, your license
+is for a term of sixty (60) days (Evaluation Period) from the date the Software was
+installed.  At the end of the Evaluation Period, further use of the Software by you
+is prohibited without the purchase of a permanent license.  If you are not
+interested in purchasing a license for the Software at the end of the Evaluation
+Period, you hereby agree to remove the Software from all computer systems on
+which it was installed and to destroy any software and documentation received.
+You may request a longer Evaluation Period or an Evaluation Period extension by
+contacting your sales representative.
+
+The Software is owned by Altaprise, Inc or its suppliers and is protected by copyright law and
+international copyright treaty.  Therefore, you must treat the Software like any other
+copyrighted material (e.g., a book), except that you may either make one copy of the
+Software solely for backup or archival purposes or transfer the Software to a single hard
+disk provided you keep the original solely for backup or archival purposes.
+
+You may transfer the Software and documentation on a permanent basis to another
+individual or organization for the number of licenses, by license type, you have acquired
+from Altaprise, Inc, provided that you obtain the prior written approval of Altaprise, Inc.  Altaprise, Inc will
+not withhold approval to a transferee located and for use within the country of purchase,
+if you advise Altaprise, Inc in writing of the name and address of the proposed transferee and
+the transferee agrees to be bound by this License Agreement and submits to Altaprise, Inc a new
+registration form identifying the machine(s) and user(s) to which the Software will be
+transferred.  If Altaprise, Inc approves the transfer of the Software, you agree to transfer all
+copies of the Software and documentation.
+
+Except as provided in the License Agreement, you may not transfer, rent, lease, lend,
+copy, modify, translate, sublicense, time-share or electronically transmit or receive the
+Software, media or documentation.  You acknowledge that the Software in source code
+form remains a confidential trade secret of Altaprise, Inc and/or its suppliers and therefore you
+agree not to modify the Software or attempt to reverse engineer, decompile, or
+disassemble the Software, except and only to the extent that such activity is expressly
+permitted by applicable law notwithstanding this limitation.
+
+Upon Altaprise, Inc's written request, you shall furnish Altaprise, Inc with a signed certificate (a)
+verifying that the Software is being used fully in accordance with this License
+Agreement, including user and machine limitations, and (b) listing the locations, types
+and serial numbers of equipment on which the Software is run.  Altaprise, Inc may also audit the
+number of copies of the Software in use by or in the possession of you, the equipment in
+or upon which the Software is installed and used and the number of users using the
+Software. Audits shall be conducted during your normal business hours at Altaprise, Inc's
+expense and so as not to interfere unduly with your business.  If an audit reveals any
+unpaid or underpaid fees due to Altaprise, Inc, you shall be invoiced for them based upon
+Altaprise, Inc's price list then in effect and, if the unpaid or underpaid fees shall exceed 5% of
+the license fees paid, you shall also be invoiced for the cost of Altaprise, Inc's audit.
+
+If you have purchased an upgrade version of the Software, it constitutes a single product
+with the Altaprise, Inc software that you upgraded.  You may use or transfer the upgrade
+version of the Software only in accordance with the License Agreement.
+
+The Software is intended for use in the country into which Altaprise, Inc sold it (or in the EEC,
+if sold into the EEC).  The Software is subject to U.S. export control laws and may be
+subject to export or import regulations in other countries. You agree to comply strictly
+with all such laws and regulations and acknowledge that you have the responsibility to
+obtain such licenses to export, re-export, or import as may be required after delivery to
+you.
+
+GENERAL TERMS THAT APPLY TO COMPILED PROGRAMS AND
+REDISTRIBUTABLES
+If you have purchased a development license, you may write and compile (including
+byte-code compile) your own application programs using the Software, including any
+libraries and source code included for such purpose with the Software.  If you have
+purchased a deployment license, you may reproduce and distribute, in executable form
+only, programs that you create using the Software, up to the number and type for which
+you are licensed, subject to all of the conditions in this statement.
+
+Altaprise, Inc products that are licensed for deployment may include certain files
+("Redistributables") intended for distribution by you to the users of programs you create.
+Redistributables include, for example, those files identified in the accompanying printed
+or on-line documentation as redistributable files, those files preselected for deployment
+by an install utility provided with the Software (if any), or those files pre-selected by a
+third party install utility which operates under control of an install script which Altaprise, Inc
+has certified (if any) for use by licensed users of this Software for deploying applications.
+In any event, the Redistributables for the Software are only those files specifically
+designated as such by Altaprise, Inc.  From time to time, Altaprise, Inc may designate other files as
+Redistributables.  You should refer to the documentation, including any "readme" or
+"deploy" files included with the Software, for additional information.
+
+If you have purchased a deployment license and subject to all of the conditions in this
+statement, you may reproduce and distribute exact copies of the Redistributables,
+provided that such copies are made from the original copy of the Software or the copy
+transferred to the single hard disk.  Copies of Redistributables may only be distributed
+with and for the sole purpose of executing application programs permitted under this
+statement that you have created using the Software.  Under no circumstances may any
+copies of Redistributables be distributed separately.  Regardless of any modifications
+which you make and regardless of how you might compile, link, and/or package your
+programs, under no circumstances may the libraries (including runtime libraries), code,
+Redistributables, and/or other files of the Software (including any portions thereof) be
+used for developing programs by anyone other than you.  Only you as the licensed user
+(or the Named User for your entity) have the right to use the libraries (including runtime
+libraries), code, Redistributables, or other files of the Software (or any portions thereof)
+for developing programs created with the Software.  In particular, you may not share
+copies of the Redistributables with other co-developers.  You may not reproduce or
+distribute any Altaprise, Inc documentation without Altaprise, Inc's permission.
+
+The license granted herein for you to create your own compiled programs and distribute
+your programs and the Redistributables (if any) is subject to all of the following
+conditions:  (i) you have purchased from Altaprise, Inc a deployment license that is appropriate
+for your deployment; (ii) all copies of the programs you create must bear a valid
+copyright notice, either your own or the Altaprise, Inc copyright notice that appears on the
+Software;  (iii) you may not remove or alter any Altaprise, Inc copyright, trademark or other
+proprietary rights notice contained in any portion of Altaprise, Inc libraries, source code,
+Redistributables or other files that bear such a notice;  (iv) Altaprise, Inc provides no warranty
+at all to any person, other than the Limited Warranty provided to the original purchaser of
+the Software, and you will remain solely responsible to anyone receiving your programs
+for support, service, upgrades, or technical or other assistance, and such recipients will
+have no right to contact Altaprise, Inc for such services or assistance;  (v) you will indemnify
+and hold Altaprise, Inc, its related companies and its suppliers, harmless from and against any
+claims or liabilities arising out of the use, reproduction or distribution of your programs;
+(vi) your programs must be written using a licensed, registered copy of the Software;
+(vii) your programs must add primary and substantial functionality, and may not be
+merely a set or subset of any of the libraries (including runtime libraries), code,
+Redistributables or other files of the Software; (viii) regardless of any modifications
+which you make and regardless of how you might compile, link, or package your
+programs, the libraries (including runtime libraries), code, Redistributables, and/or other
+files of the Software (including any portions thereof) may not be used in programs
+created by your end users (i.e., users of your programs) and may not be further
+redistributed by your end users; and (ix) you may not use Altaprise, Inc's or any of its suppliers'
+names, logos, or trademarks to market your programs, except to state that your program
+was written using the Software.
+
+The Software might include source code, redistributable files, and/or other files provided
+by a third party vendor (Third Party Software).  Since use of Third Party Software might
+be subject to license restrictions imposed by the third party vendor, you should refer to
+the on-line documentation (if any) provided with Third Party Software for any license
+restrictions imposed by the third party vendor.  In any event, any license restrictions
+imposed by a third party vendor are in addition to, not in lieu of, the terms and conditions
+of the License Agreement.
+
+All Altaprise, Inc libraries, source code, Redistributables and other files remain Altaprise, Inc's
+exclusive property.  Regardless of any modifications that you make, you may not
+distribute any files (particularly Altaprise, Inc source code and other non-executable files)
+except those that Altaprise, Inc has expressly designated as Redistributables.  Nothing in the
+License Agreement permits you to derive the source code of files that Altaprise, Inc has
+provided to you in executable form only, or to reproduce, modify, use, or distribute the
+source code of such files.  You are not, of course, restricted from distributing source code
+or byte code that is entirely your own.  Source code which you generate with an Altaprise, Inc
+source code generator, such as an Application Wizard, is considered by Altaprise, Inc to be your
+code.
+
+Contact Altaprise, Inc for the applicable royalties due and other licensing terms for all other
+uses and/or distribution of the Redistributables.
+
+LIMITED WARRANTY
+Except with respect to the Redistributables, which are provided "as is," without warranty
+of any kind, Altaprise, Inc warrants that the Software, as updated and when properly used, will
+perform substantially in accordance with the accompanying documentation, and the
+Software media will be free from defects in materials and workmanship, for a period of
+ninety (90) days from the date of receipt.  Any implied warranties on the Software are
+limited to ninety (90) days.  Some states/jurisdictions do not allow limitations on duration
+of an implied warranty, so the above limitation may not apply to you.
+
+Altaprise, Inc's and its suppliers' entire liability and your exclusive remedy shall be, at Altaprise, Inc's
+option, either (a) return of the price paid, or (b) repair or replacement of the Software that
+does not meet Altaprise, Inc's Limited Warranty and which is returned to Altaprise, Inc with a copy of
+your receipt.  DO NOT RETURN ANY PRODUCT UNTIL YOU HAVE CALLED THE
+Altaprise, Inc CUSTOMER SERVICE DEPARTMENT AND OBTAINED A RETURN
+AUTHORIZATION NUMBER.  This Limited Warranty is void if failure of the Software
+has resulted from accident, abuse, or misapplication.  Any replacement Software will be
+warranted for the remainder of the original warranty period or thirty (30) days, whichever
+is longer.  Outside the United States, neither these remedies nor any product support
+services offered by Altaprise, Inc are available without proof of purchase from an authorized
+non-U.S. source.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, Altaprise, Inc
+AND ITS SUPPLIERS DISCLAIM ALL OTHER WARRANTIES AND CONDITIONS,
+EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, TITLE, AND NON-INFRINGEMENT, WITH REGARD TO THE
+SOFTWARE, AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT
+SERVICES. THIS LIMITED WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS.
+YOU MAY HAVE OTHERS, WHICH VARY FROM STATE/JURISDICTION TO
+STATE/JURISDICTION.
+
+LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO
+EVENT SHALL Altaprise, Inc OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL,
+INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER
+(INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS
+PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR
+ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY
+TO USE THE SOFTWARE PRODUCT OR THE PROVISION OF OR FAILURE TO
+PROVIDE SUPPORT SERVICES, EVEN IF Altaprise, Inc HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES. IN ANY CASE, Altaprise, Inc'S AND ITS
+SUPPLIERS' ENTIRE LIABILITY UNDER ANY PROVISION OF THIS LICENSE
+AGREEMENT SHALL BE LIMITED TO THE GREATER OF THE AMOUNT
+ACTUALLY PAID BY YOU FOR THE SOFTWARE PRODUCT OR U.S. $25;
+PROVIDED, HOWEVER, IF YOU HAVE ENTERED INTO AN Altaprise, Inc SUPPORT
+SERVICES AGREEMENT, Altaprise, Inc'S AND ITS SUPPLIERS' ENTIRE LIABILITY
+REGARDING SUPPORT SERVICES SHALL BE GOVERNED BY THE TERMS OF
+THAT AGREEMENT. BECAUSE SOME STATES AND JURISDICTIONS DO NOT
+ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY, THE ABOVE
+LIMITATION MAY NOT APPLY TO YOU.
+
+HIGH RISK ACTIVITIES
+The Software is not fault-tolerant and is not designed, manufactured or intended for use
+or resale as on-line control equipment in hazardous environments requiring fail-safe
+performance, such as in the operation of nuclear facilities, aircraft navigation or
+communication systems, air traffic control, direct life support machines, or weapons
+systems, in which the failure of the Software could lead directly to death, personal injury,
+or severe physical or environmental damage ("High Risk Activities"). Altaprise, Inc and its
+suppliers specifically disclaim any express or implied warranty of fitness for High Risk
+Activities.
+
+U.S. GOVERNMENT RESTRICTED RIGHTS
+The Software and documentation are provided with RESTRICTED RIGHTS.  Use,
+duplication, or disclosure by the Government is subject to restrictions as set forth in
+subparagraph (c)(1)(ii) of the Rights in Technical Data and Computer Software clause at
+DFARS 252.227-7013 or subparagraphs (c)(1) and (2) of the Commercial Computer
+Software-Restricted Rights at 48 CFR 52.227-19, as applicable.  Manufacturer is Altaprise, Inc
+Corporation, 850 North Randolph Street Suite 402, Arlington VA 22203.
+
+GENERAL PROVISIONS
+All terms of any purchase order or other ordering document shall be superseded by the
+License Agreement.  The License Agreement may only be modified in writing signed by
+you and an authorized officer of Altaprise, Inc.  If any provision of the License Agreement is
+found void or unenforceable, the remainder will remain valid and enforceable according
+to its terms.  If any remedy provided is determined to have failed for its essential purpose,
+all limitations of liability and exclusions of damages set forth in the Limited Warranty
+shall remain in effect.
+
+The License Agreement shall be construed, interpreted and governed by the laws of the
+State of Virginia, U.S.A.  The License Agreement gives you specific legal rights; you
+may have others that vary from state to state and from country to country.  Altaprise, Inc
+reserves all rights not specifically granted in the License Agreement.
+

@@ -1,0 +1,5 @@
+productName=microERP
+versionNumber=@VERSIONNUMBER@
+buildDate=@BUILDNUMBER@
+patchNumber=@PATCHNUMBER@
+languages=en

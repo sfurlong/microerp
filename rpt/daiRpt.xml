@@ -1,0 +1,17 @@
+<Root_Element>
+   <PageHeading>
+      <Report_Title>Chart Of Accounts</Report_Title>
+   </PageHeading>
+   <Tables>
+      <Table_SQL_Name>account</Table_SQL_Name>
+   </Tables>
+   <Columns>
+      <Col_SQL_Name>id</Col_SQL_Name>
+      <Col_Heading>Acct Num</Col_Heading>
+   </Columns>
+   <Columns>
+      <Col_SQL_Name>description</Col_SQL_Name>
+      <Col_Heading>Description</Col_Heading>
+   </Columns>
+   <SQL_Where_Clause>order by id</SQL_Where_Clause>
+</Root_Element>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://homestar.doe.gov"
+            targetNamespace="http://homestar.doe.gov"
+            elementFormDefault="qualified">
+
+  <xsd:complexType name="RebateData">
+    <xsd:sequence>
+      <xsd:element name="RebateAggregatorID" type="xsd:string"/>
+      <xsd:element name="RebateAggregatorSiteID" type="xsd:string"/>
+      <xsd:element name="CustomerDetails" type="xsd:string"/>
+      <xsd:element name="ContractorDetails" type="xsd:string"/>
+      <xsd:element name="JobOrderID" type="xsd:string"/>
+      <xsd:element name="JobOrderDetailsID" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="Rebates" type="RebateData">
+    <xsd:annotation>
+      <xsd:documentation>
+        A sample element
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+</xsd:schema>

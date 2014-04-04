@@ -1,0 +1,7 @@
+; daiRptViewer.def : Declares the module parameters for the DLL.
+
+LIBRARY      "daiRptViewer"
+DESCRIPTION  'daiRptViewer Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

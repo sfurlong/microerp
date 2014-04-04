@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+<SCRIPT LANGUAGE="Javascript"> 
+          var javawsInstalled = 0; 
+          isIE = "false"; 
+
+          if (navigator.mimeTypes && navigator.mimeTypes.length) { 
+             x = navigator.mimeTypes['application/x-java-jnlp-file']; 
+             if (x) javawsInstalled = 1; 
+          } else { 
+             isIE = "true"; 
+          } 
+
+          function insertLink(url, name) { 
+           if (javawsInstalled) { 
+                document.write("<a href=" + url + ">"  + name + "</a>"); 
+             } else { 
+                document.write("Need to install Java Web Start"); 
+                document.write("<a href=http://java.sun.com/products/javawebstart/needdownload.html?> Download Java WebStart</a>");
+             } 
+          } 
+</SCRIPT> 
+
+
+
+<SCRIPT LANGUAGE="VBScript"> 
+          on error resume next 
+          If isIE = "true" Then 
+            If Not(IsObject(CreateObject("JavaWebStart.IsInstalled"))) Then 
+                  javawsInstalled = 0 
+            Else 
+                  javawsInstalled = 1 
+            End If 
+          End If 
+</SCRIPT>
+
+
+<html>
+<head>
+	<title>JNLP TEST</title>
+</head>
+
+<body leftmargin=15% topmargin=10% bottommargin=5%>
+
+<SCRIPT LANGUAGE="Javascript"> 
+        insertLink("http.://www.mycompany.com/my-app.jnlp", 
+                   "My Application"); 
+</SCRIPT> 
+
+
+<center>
+        <a href="microerpWebStart.jnlp"> microERP Web Launch</a>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by daiRptViewer_win32_exe.rc
+//
+#define HIDC_PREVIEW                    0x806603e8    // IDD_DAIRPTVIEWER_WIN32_EXE_DIALOG

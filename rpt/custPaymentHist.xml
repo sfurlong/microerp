@@ -1,0 +1,70 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>shipment</Table_SQL_Name>
+   </Table>
+   <Table>
+      <Table_SQL_Name>cash_receipt</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>shipment.customer_id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Customer #</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>shipment.customer_name</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Customer</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>shipment.date_created</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice Date</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>shipment.id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice #</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>shipment.total_value</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Original Amt</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>shipment.total_cash_received</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice Amt</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>(shipment.date_created - cash_receipt.date_received)</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Days Paid</Col_Heading>
+   </Column>
+   <SQL_Where_Clause>where shipment.id = cash_receipt.shipment_id and shipment.customer_name = '?:1' and (is_canceled != 'Y' OR is_canceled is null) order by shipment.customer_id </SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Customer Payment History&lt;br&gt; For ?:1 &lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>0</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>1</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>5</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>6</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+   </Detail>
+</Root_Element>

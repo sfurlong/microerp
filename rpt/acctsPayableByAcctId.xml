@@ -1,0 +1,72 @@
+<Root_Element>
+   <Table>
+      <Table_SQL_Name>payment_voucher</Table_SQL_Name>
+   </Table>
+   <Column>
+      <Col_SQL_Name>acctid</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Account Id</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>acctname</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Account Name</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>vendor_name</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Vendor Name</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>payment_due_date</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Date Due</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>id</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Voucher Id</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>invoice_num</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Invoice Num</Col_Heading>
+   </Column>
+   <Column>
+      <Col_SQL_Name>total_value - total_payments_posted</Col_SQL_Name>
+      <Col_Heading>&lt;U&gt;Amt Due</Col_Heading>
+      <Display_Format>CURRENCY</Display_Format>
+   </Column>
+   <SQL_Where_Clause>where (total_payments_posted is null or (total_payments_posted &lt; total_value) or (total_payments_posted &gt; total_value))  and (is_voided is null or is_voided = 'N') order by acctid, vendor_name, payment_due_date </SQL_Where_Clause>
+   <ReportHeader>
+      <Report_Title>&lt;center&gt;Accounts Payable By Account Id&lt;/center&gt;&lt;hr&gt;</Report_Title>
+   </ReportHeader>
+   <GroupHeader>
+      <GroupByColNum>0</GroupByColNum>
+      <ColNum>0</ColNum>
+      <ColNum>1</ColNum>
+   </GroupHeader>
+   <Detail>
+      <DetailCol>
+         <DetailColPos>2</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>3</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>4</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>5</DetailColPos>
+         <DetailCellTags/>
+      </DetailCol>
+      <DetailCol>
+         <DetailColPos>6</DetailColPos>
+         <DetailCellTags>align=right</DetailCellTags>
+      </DetailCol>
+   </Detail>
+   <GroupFooter>
+      <SumColPos>6</SumColPos>
+   </GroupFooter>
+   <ReportFooter>
+      <Footer_Note1/>
+      <SumColPos>6</SumColPos>
+   </ReportFooter>
+</Root_Element>

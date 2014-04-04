@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CR - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP108.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "CR_EXPORTS" /FR"Release/" /Fp"Release/CR.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Release\c++\crinf\CRinf.c"
+]
+Creating command line "cl.exe @C:\TEMP\RSP108.tmp" 
+Creating temporary file "C:\TEMP\RSP109.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/CRinf.pdb" /machine:I386 /out:"Release/CRinf.dll" /implib:"Release/CRinf.lib" 
+".\Release\CRinf.obj"
+]
+Creating command line "link.exe @C:\TEMP\RSP109.tmp"
+<h3>Output Window</h3>
+Compiling...
+CRinf.c
+F:\Release\c++\crinf\CRinf.c(431) : warning C4101: 'jString' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(429) : warning C4101: 'textLength' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(427) : warning C4101: 'rv' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(428) : warning C4101: 'textHandle' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(450) : warning C4101: 'retcode' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(628) : warning C4101: 'errorCode' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(708) : warning C4101: 'methodid' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(710) : warning C4101: 'positionId' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(829) : warning C4101: 'methodid' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(831) : warning C4101: 'positionId' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(968) : warning C4101: 'r' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(1184) : warning C4101: 'methodid' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(1583) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+F:\Release\c++\crinf\CRinf.c(1489) : warning C4101: 'methodid' : unreferenced local variable
+F:\Release\c++\crinf\CRinf.c(1524) : warning C4761: integral size mismatch in argument; conversion supplied
+F:\Release\c++\crinf\CRinf.c(1583) : warning C4761: integral size mismatch in argument; conversion supplied
+Linking...
+   Creating library Release/CRinf.lib and object Release/CRinf.exp
+Creating command line "bscmake.exe /nologo /o"Release/CR.bsc"  ".\Release\CRinf.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CRinf.dll - 0 error(s), 16 warning(s)
+</pre>
+</body>
+</html>
