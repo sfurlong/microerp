@@ -6,9 +6,9 @@ REM used on Win32 platforms only.
 REM ###########################################
 REM ####  SET THESE TO YOUR WIN32 ENV SETTINGS
 REM ###########################################
-set DAI_HOME=c:\altaprise\microerp
-set JAVA_HOME=C:\jdk1.5.0_06
-set ANT_HOME=c:\altaprise\eclipse\plugins\org.apache.ant_1.6.5
+set DAI_HOME=c:\github\microerp
+set JAVA_HOME=D:\oracle\Java\jdk1.7.0_40
+set ANT_HOME=D:\oracle\Middleware11117\jdeveloper\ant
 set WEBSERVER_HOME=%DAI_HOME%\jetty
 
 set CLASSPATH=

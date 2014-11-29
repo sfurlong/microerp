@@ -1,0 +1,111 @@
+body {
+margin:0; padding:0;
+font-family:verdana, arial, sans-serif; font-size:80%; color:#666666; background-color:#32668E;}
+
+p {
+margin:0; padding:0.4em 0.2em 0.6em 0.2em;}
+
+a:link, a:visited {
+color:#80C62E; text-decoration:underline;}
+
+a:hover {
+color:#32668E; text-decoration:none;}
+
+a:active {
+color:#82D339; text-decoration:underline;}
+
+div.wholepage {
+margin:0 8% 0 8%; padding:0; background-color:#FFFFFF;}
+
+div {margin:0; padding:0;}
+
+h1 {
+color:#32668E; font-size:150%; font-family:"trebuchet ms", "lucida sans", arial, sans-serif; 
+font-weight:normal;}
+
+
+/* +++ Start Of Header Section +++ */
+
+#header {
+margin:0; padding:0;}
+
+.superheader {
+background-color:#294D69; text-align:right; color:#FFFFFF; padding:2px 2em 2px 2px;}
+
+.mainheader {
+margin:0; padding:45px 1em 40px 1em; text-align:left;
+background-image:url(microerp.jpg); background-repeat:no-repeat; background-position:right top;}
+
+.mainheader h1 {
+font-size:300%; margin:0 0 5px 0; padding:0;}
+
+.mainheader p {
+text-indent:4em; color:#5D99C7; margin:0; padding:0.2em; font-weight:bold;}
+
+.subheader {
+background-color:#32668E; margin:0; padding:0.0em; text-align:center; color:#FFFFFF;}
+
+
+
+
+/* +++ Start Of Side Menu Section +++ */
+
+#sidecontainer {
+margin:0; padding:0; float:left; width:20%; text-align:center;}
+
+#sidecontainer h2 {
+display:block; margin:0; padding:0.2em; color:#FFFFFF; background-color:#294D69; font-weight:normal;
+ font-family:"trebuchet ms", "lucida sans", arial, sans-serif; font-size:120%;}
+
+.nav {
+margin:0 0 1.5em 0; padding:0; list-style-type:none; background-color:#FFFFFF;}
+
+.nav li {
+margin:0; padding:0; display:block; border-bottom:1px solid #294D69;}
+
+.nav a:link, .nav a:visited {
+display:block; margin:0; text-decoration:none; color:#32668E; margin:0; padding:0.5em;}
+
+.nav a:hover {
+display:block; margin:0; text-decoration:none; color:#666666; margin:0; padding:0.5em; background-color:#ACCBE2;}
+
+.nav a:active {
+display:block; margin:0; text-decoration:none; color:#32668E; margin:0; padding:0.5em;}
+
+
+
+
+/* +++ Start Of Content Section +++ */
+
+#content {
+margin:0 0 0 20%; padding:0.8em; border-left:1px solid #294D69;}
+
+#content img {
+float:left; border-style:none;}
+
+q {
+display:block; margin:0; padding:0.4em 20% 0.6em 20%; color:#999999; font-size:120%; 
+text-align:center; height:3em;}
+
+q:before, q:after {
+content:"";}
+
+#content h1 {margin:0; padding:0.1em; text-indent:2.5em;}
+
+
+/* +++ Start of Footer Section +++ */
+
+#footer {
+margin:0; padding:0;}
+
+.superfooter {
+background-color:#32668E; height:1.0em;}
+
+.mainfooter {
+background-color:#FFFFFF; text-align:center;}
+
+.subfooter {
+background-color:#294D69; height:1.0em;}
+
+#footer p {
+font-size:75%; color:#999999; padding:0.3em;}

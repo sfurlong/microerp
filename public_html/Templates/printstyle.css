@@ -1,0 +1,76 @@
+body {
+font-family:verdana, arial, sans-serif; font-size:80%; color:#000000; background-color:#FFFFFF;}
+
+p {
+margin:0; padding:0.4em 0.2em 0.6em 0.2em;}
+
+a {
+text-decoration:underline; color:#000000; font-weight:bold;}
+
+div.wholepage {
+margin:auto; padding:1em;}
+
+h1 {
+font-size:150%; font-family:"trebuchet ms", "lucida sans", arial, sans-serif; font-weight:normal;}
+
+
+/* +++ Start Of Header Section +++ */
+
+#header {
+margin:0; padding:0;}
+
+.superheader {
+text-align:right;}
+
+.mainheader {
+padding:1em 0 0.5em 0; text-align:left;}
+
+.mainheader h1 {
+font-size:300%; margin:0; padding:0;}
+
+.mainheader p {
+text-indent:4em; margin:0; padding:0.2em;}
+
+.subheader {
+margin:0; padding:0.5em; text-align:center;}
+
+
+
+
+/* +++ Start Of Side Menu Section +++ */
+
+#sidecontainer {
+display:none;}
+
+
+
+
+/* +++ Start Of Content Section +++ */
+
+#content {
+margin:0; padding:0.8em;}
+
+q {
+display:block; margin:0; padding:0.4em 20% 0.6em 20%; font-size:120%; text-align:center;}
+
+.lquo, .rquo {display:none;}
+
+#content h1 {margin:0; padding:0.1em; text-indent:2.5em;}
+
+
+/* +++ Start of Footer Section +++ */
+
+#footer {
+margin:0; padding:0; text-align:center;}
+
+.superfooter {
+display:none;}
+
+.mainfooter {
+text-align:center;}
+
+.subfooter {
+display:none;}
+
+#footer p {
+font-size:75%; padding:0.3em;}

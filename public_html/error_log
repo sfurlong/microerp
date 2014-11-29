@@ -1,0 +1,2 @@
+[21-Nov-2014 15:35:39 America/Chicago] PHP Fatal error:  Call to undefined function println() in /home3/sfurlong/public_html/myphp.php on line 26
+[21-Nov-2014 16:12:30 America/Chicago] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT) in /home3/sfurlong/public_html/vawr-phone-home.php on line 8
