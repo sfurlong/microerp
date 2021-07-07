@@ -1,4 +1,4 @@
-# This Batch file is used to set all the environment files necessary to 
+# This Batch file is used to set all the environment files necessary to
 # run the eCorp, by Digital Artifacts, Inc.  This batch file should be
 # used on unix platforms only.
 ###########################################
@@ -31,6 +31,8 @@ export classpath="./lib/commons-net-1.3.0.jar:$classpath"
 export classpath="./lib/jakarta-oro-2.0.8.jar:$classpath"
 export classpath="./lib/jbcl3.0.jar:$classpath"
 export classpath="./lib/jbcl3.0-res.jar:$classpath"
+
+export classpath="./target/microerp-0.0.1-SNAPSHOT.jar:$classpath"
 
 export PATH=$JAVA_HOME/bin:$DAI_HOME/lib:$PATH
 echo $PATH
