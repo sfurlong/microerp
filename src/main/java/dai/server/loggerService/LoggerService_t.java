@@ -50,18 +50,18 @@ public class LoggerService_t
 	public static void main(String[] args) {
 		try
 		{
-			UIManager.setLookAndFeel(new com.sun.java.swing.plaf.windows.WindowsLookAndFeel());
+			//UIManager.setLookAndFeel(new com.sun.java.swing.plaf.windows.WindowsLookAndFeel());
 			//UIManager.setLookAndFeel(new com.sun.java.swing.plaf.motif.MotifLookAndFeel());
-			//UIManager.setLookAndFeel(new javax.swing.plaf.metal.MetalLookAndFeel());
+			UIManager.setLookAndFeel(new javax.swing.plaf.metal.MetalLookAndFeel());
 		} catch (Exception e)
 		{
 		}
 		new LoggerService_t();
 	}
 
-    public class daiSecurityManager extends java.rmi.RMISecurityManager {
+    public class daiSecurityManager extends SecurityManager {
         public boolean checkTopLevelWindow(Object window) {
-            super.checkTopLevelWindow(window);
+            //super.checkTopLevelWindow(window);
             return true;
         }
     }

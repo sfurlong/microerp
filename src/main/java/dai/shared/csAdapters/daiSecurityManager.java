@@ -10,9 +10,9 @@ package dai.shared.csAdapters;
 //This gets rid of the non-secure applet warning (Yellow band
 //at the bottom of all windows/dialogs) when using RMI.
 //System.setSecurityManager(new daiSecurityManager());
-public class daiSecurityManager extends java.rmi.RMISecurityManager {
+public class daiSecurityManager extends SecurityManager {
     public boolean checkTopLevelWindow(Object window) {
-        super.checkTopLevelWindow(window);
+        //super.checkTopLevelWindow(window);  //Deprecated
         return true;
     }
 }
